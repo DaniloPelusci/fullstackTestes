@@ -7,6 +7,7 @@
       <th>Inscrição Início</th>
       <th>Inscrição Fim</th>
       <th>Status</th>
+      <th>A\u00e7\u00f5es</th>
     </tr>
   </thead>
   <tbody>
@@ -16,6 +17,10 @@
       <td>{{ edital.dtInscricaoIni }}</td>
       <td>{{ edital.dtInscricaoFim }}</td>
       <td>{{ edital.status }}</td>
+      <td>
+        <button type="button" (click)="edit(edital.id)">Editar</button>
+        <button type="button" (click)="delete(edital.id)">Deletar</button>
+      </td>
     </tr>
   </tbody>
 </table>

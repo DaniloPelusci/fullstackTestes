@@ -1,0 +1,24 @@
+<h2>Editar Edital</h2>
+<form (ngSubmit)="save()" #form="ngForm">
+  <label>
+    Numero:
+    <input name="numero" [(ngModel)]="edital.numero" />
+  </label>
+  <label>
+    Nome:
+    <input name="nome" [(ngModel)]="edital.nome" />
+  </label>
+  <label>
+    Inscri\u00e7\u00e3o In\u00edcio:
+    <input name="dtInscricaoIni" [(ngModel)]="edital.dtInscricaoIni" />
+  </label>
+  <label>
+    Inscri\u00e7\u00e3o Fim:
+    <input name="dtInscricaoFim" [(ngModel)]="edital.dtInscricaoFim" />
+  </label>
+  <label>
+    Status:
+    <input name="status" [(ngModel)]="edital.status" />
+  </label>
+  <button type="submit">Salvar</button>
+</form>
