@@ -1,0 +1,21 @@
+<h2>Editais</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Numero</th>
+      <th>Nome</th>
+      <th>Inscrição Início</th>
+      <th>Inscrição Fim</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let edital of editais">
+      <td>{{ edital.numero }}</td>
+      <td>{{ edital.nome }}</td>
+      <td>{{ edital.dtInscricaoIni }}</td>
+      <td>{{ edital.dtInscricaoFim }}</td>
+      <td>{{ edital.status }}</td>
+    </tr>
+  </tbody>
+</table>
